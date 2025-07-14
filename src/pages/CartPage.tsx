@@ -56,7 +56,7 @@ const CartPage = () => {
     <main className="bg-surface py-8 md:py-12 px-2 md:px-4 min-h-screen">
       <div className="max-w-6xl mx-auto flex items-stretch gap-8" style={{height: '80vh'}}>
         {/* Cart Items */}
-        <section className="lg:w-2/3 bg-white rounded-2xl shadow p-4 md:p-8 h-full overflow-y-auto min-h-0 flex flex-col max-h-[60vh]">
+        <section className="lg:w-2/3 bg-white rounded-2xl shadow p-4 md:p-8 h-full overflow-y-auto min-h-0 flex flex-col max-h-[80vh]">
           <h1 className="text-3xl font-bold text-headline mb-6 flex items-center gap-3">
             <ShoppingCart className="w-8 h-8 text-primary" /> Cart
           </h1>
