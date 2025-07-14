@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font */
+body { @apply font-sans; }
+
+/* Default Walmart Theme */
+:root {
+  --color-primary: #0071CE;
+  --color-secondary: #004C91;
+  --color-accent: #FFC220;
+  --color-success: #00A652;
+  --color-warning: #FF6900;
+  --color-error: #E53E3E;
+  --color-neutral: #525252;
+  --color-light: #F5F5F5;
+  --color-background: #FFFFFF;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Eco Mode Theme overrides */
+.eco {
+  --color-primary: #2D5A27;
+  --color-secondary: #4A7C59;
+  --color-accent: #7FB069;
+  --color-success: #20B2AA;
+  --color-warning: #D4AF37;
+  --color-error: #CD5C5C;
+  --color-neutral: #3C4142;
+  --color-light: #F0F4F0;
+  --color-background: #FAFFF8;
+}
+
+/* Helper classes using the tokens */
+.btn-primary {
+  @apply text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300;
+  background-color: var(--color-accent);
+}
+.btn-primary:hover { filter: brightness(1.1); }
+
+.link-brand { color: var(--color-primary); }
+.link-brand:hover { text-decoration: underline; }
+
+.bg-surface { background-color: var(--color-light); }
+.text-headline { color: var(--color-neutral); font-weight: 700; }
+.text-body { color: var(--color-neutral); }
